@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>jQM - Dynamic listview button - jsFiddle demo by Gajotres</title>
+  
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.js'></script>
+  
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+    
+      <link rel="stylesheet" type="text/css" href="http://jeromeetienne.github.com/jquery-mobile-960/css/jquery-mobile-fluid960.css">
+    
+  
+    
+      <link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog.min.css">
+    
+  
+    
+      <script type='text/javascript' src="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog2.js"></script>
+    
+  
+  <style type='text/css'>
+    
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(function(){
+$(document).on('pagebeforeshow', '#index', function(){    
+    // Add a new listview element
+    $('#mylist').append('<li><a href="item3.html">2800 W Main St, Sedalia, MO 65301-2205</a></li>');
+
+     $('#mylist').append('<li><a href="item3.html">4201 Main St, Kansas City, MO 64111-2316</a></li>');
+	 $('#mylist').append('<li><a href="item3.html">3732 Main St, Kansas City, MO 64111-1913</a></li>');
+$('#mylist').append('<li><a href="item3.html">1908 Troost Ave, Kansas City, MO 64108-1728</a></li>');
+$('#mylist').append('<li><a href="item3.html">3101 Mercier St, Kansas City, MO 64111-3631</a></li>');
+$('#mylist').append('<li><a href="item3.html">510 Division St, Kansas City, KS 66103-1904</a></li>');
+$('#mylist').append('<li><a href="item3.html">2450 Summit St, Kansas City, MO 64108-2425</a></li>');
+$('#mylist').append('<li><a href="item3.html">3557 Stadium Dr, Kansas City, MO 64129-1734</a></li>');
+$('#mylist').append('<li><a href="item3.html">6300 Stadium Dr, Kansas City, MO 64129-1737</a></li>');
+$('#mylist').append('<li><a href="item3.html">1411 E 19th St, Kansas City, MO 64108-1733</a></li>');
+$('#mylist').append('<li><a href="item3.html">4020 Winchester Ave, Kansas City, MO 64129-1823</a></li>');
+$('#mylist').append('<li><a href="item3.html">1724 Garfield Ave, Kansas City, MO 64127-2571</a></li>');
+
+
+
+
+    // Enhance new listview element
+    $('#mylist').listview('refresh');
+    // Hide first listview element
+    $('#mylist li').eq(0).addClass('ui-screen-hidden');    
+});
+});//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>jQM Complex Demo</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>    
+</head>
+<body>
+    <div data-role="page" id="index">
+        <div data-theme="a" data-role="header">
+            <h3>
+                Near Addresses
+            </h3>
+            <a href="#second" class="ui-btn-right">Next</a>
+        </div>
+
+        <div data-role="content">
+            <ul data-role="listview" data-theme="a" id="mylist">
+                <li><a href="item1.html">Item1</a></li>
+                <li><a href="item2.html">7700 E US Highway 40, Kansas City, MO 64129-3211</a></li>                
+            </ul>
+        </div>
+
+        <div data-theme="a" data-role="footer" data-position="fixed">
+
+        </div>
+    </div>   
+</body>
+</html>    
+  
+</body>
+
+
+</html>
+

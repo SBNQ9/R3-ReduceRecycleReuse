@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">R3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_parser">parser</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_welcome">welcome</string>
+    <string name="title_hint">Enter Zipcode</string>
+    <string name="app_sort">SortG</string>
+    <string name="title_activity_list">list</string>
+    <string name="title_activity_automotive">automotive</string>
+    <string name="title_activity_battery">battery</string>
+    <string name="title_activity_housebat">housebat</string>
+    <string name="title_activity_elec">elec</string>
+    <string name="title_activity_glass">glass</string>
+    <string name="title_activity_garden">garden</string>
+    <string name="title_activity_hazardous">hazardous</string>
+    <string name="title_activity_household">household</string>
+    <string name="title_activity_metal">metal</string>
+    <string name="title_activity_plastic">plastic</string>
+    <string name="title_activity_paper">paper</string>
+    <string name="title_activity_paint">paint</string>
+    <string name="title_activity_construction">construction</string>
+    <string name="title_activity_recycle">Recycle</string>
+    <string name="title_activity_pick_up">PickUp</string>
+    <string name="title_activity_calender">Calender</string>
+    <string name="title_activity_schedule">Schedule</string>
+    <string name="title_activity_notify">Notify</string>
+    <string name="title_activity_service_provider">ServiceProvider</string>
+    <string name="title_activity_collect">Collect</string>
+    <string name="title_activity_after_pick_up">AfterPickUp</string>
+    <string name="title_activity_post_list">PostList</string>
+    <string name="title_activity_reuse">Reuse</string>
+
+
+    <style name="DefaultButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#979797</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#f9f9f9</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <string-array name="Catagoryselect">
+        <item>Electronics</item>
+        <item>Plastic</item>
+        <item>Greenery</item>
+        <item>HouseHold</item>
+    </string-array>
+    <string name="title_activity_reduce">Reduce</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_sign_in">SignIn</string>
+    <string name="title_activity_reuse_item_select">ReuseItemSelect</string>
+    <string name="title_activity_after_sign_in">AfterSignIn</string>
+    <string name="title_activity_reuse_list">ReuseList</string>
+    <string name="title_activity_last_reuse">LastReuse</string>
+    <string name="title_activity_reduse_url">ReduseUrl</string>
+    <string name="title_activity_shopping">Shopping</string>
+
+
+
+</resources>

@@ -1,0 +1,41 @@
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"  android:paddingLeft="@dimen/activity_horizontal_margin"
+
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="R3(RECYCLE,REUSE,REDUCE)"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SERVICE PROVIDER"
+            android:id="@+id/button"
+            android:layout_weight="0.14"
+            android:elevation="@dimen/abc_control_padding_material"
+            android:focusableInTouchMode="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="COMMUNITY PEOPLE"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14"
+            android:focusable="false"
+            android:focusableInTouchMode="true" />
+    </LinearLayout>
+

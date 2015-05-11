@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffffffff"
+    >
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/sortguide"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/sg"
+        android:scaleType="fitXY"
+        android:background="#ffffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sorting Guide"
+        android:id="@+id/textView"
+        android:layout_below="@+id/sortguide"
+        android:layout_alignEnd="@+id/sortguide" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/maps"
+        android:layout_alignTop="@+id/sortguide"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/recycling1"
+        android:background="#ffffffff"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Recycle"
+        android:id="@+id/textView54"
+        android:layout_marginEnd="56dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignEnd="@+id/maps" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/reuse"
+        android:src="@drawable/reuse"
+        android:layout_below="@+id/textView54"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="66dp"
+        android:background="#ffffffff" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/reduce"
+        android:src="@drawable/reduce"
+        android:background="#ffffffff"
+        android:layout_alignTop="@+id/reuse"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REUSE"
+        android:id="@+id/textView59"
+        android:layout_below="@+id/reuse"
+        android:layout_alignStart="@+id/textView54" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="             REDUCE"
+        android:id="@+id/textView60"
+        android:layout_alignTop="@+id/textView59"
+        android:layout_alignStart="@+id/reduce" />
+</RelativeLayout>

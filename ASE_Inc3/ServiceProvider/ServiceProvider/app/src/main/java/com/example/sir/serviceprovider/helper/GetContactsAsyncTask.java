@@ -1,0 +1,107 @@
+package com.example.sir.serviceprovider.helper;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+
+import android.os.AsyncTask;
+
+import com.mongodb.BasicDBList;
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
+//import com.wordpress.michaelkyazze.codeperspective102.MyContact;
+
+/**
+ * Async Task to retrieve your stored contacts from mongolab
+ * @author KYAZZE MICHAEL
+ *
+ */
+public class GetContactsAsyncTask extends AsyncTask<MyContact, Void, ArrayList<MyContact>> {
+	static BasicDBObject user = null;
+	static String OriginalObject = "";
+	static String server_output = null;
+	static String temp_output = null;
+
+	@Override
+	protected ArrayList<MyContact> doInBackground(MyContact... arg0) {
+
+
+
+		ArrayList<MyContact> mycontacts = new ArrayList<MyContact>();
+		try
+		{
+
+			QueryBuilder qb = new QueryBuilder();
+	        URL url = new URL(qb.buildContactsGetURL());
+	        HttpURLConnection conn = (HttpURLConnection) url
+					.openConnection();
+	        conn.setRequestMethod("GET");
+			conn.setRequestProperty("Accept", "application/json");
+
+			if (conn.getResponseCode() != 200) {
+				throw new RuntimeException("Failed : HTTP error code : "
+						+ conn.getResponseCode());
+			}
+
+			BufferedReader br = new BufferedReader(new InputStreamReader(
+					(conn.getInputStream())));
+
+			while ((temp_output = br.readLine()) != null) {
+				server_output = temp_output;
+			}
+
+            // create a basic db list
+			String mongoarray = "{ artificial_basicdb_list: "+server_output+"}";
+			System.out.println(mongoarray);
+            Object o = com.mongodb.util.JSON.parse(mongoarray);
+            System.out.println(o);
+
+			DBObject dbObj = (DBObject) o;
+			BasicDBList contacts = (BasicDBList) dbObj.get("artificial_basicdb_list");
+
+            System.out.println(contacts);
+
+		  for (Object obj : contacts) {
+			DBObject userObj = (DBObject) obj;
+
+			MyContact temp = new MyContact();
+
+             System.out.println(temp);
+              Date date = (Date)userObj.get("date");
+
+              Date date1=new Date();
+
+              SimpleDateFormat fmt = new SimpleDateFormat("yyyyMMdd");
+            System.out.println(date);
+              System.out.println(date1);
+
+			//temp.setDoc_id(userObj.get("_id").toString());
+
+                  temp.setFirst_name(userObj.get("document.first_name").toString());
+                  temp.setStreet(userObj.get("document.last_name").toString());
+                  temp.setApt(userObj.get("document.email").toString());
+                  temp.setNp(Integer.parseInt(userObj.get("document.np").toString()));
+
+
+                  temp.setDate(date);
+                  temp.setPhone(userObj.get("document.phone").toString());
+
+                  //temp.setFirst_name();
+
+                  mycontacts.add(temp);
+              System.out.println(mycontacts);
+			}
+
+		}catch (Exception e) {
+			e.getMessage();
+		}
+
+
+		return mycontacts;
+	}
+}

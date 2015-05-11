@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/button1">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#ff2db555"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Reduce"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff020b03"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textIsSelectable="false" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:fillViewport="false"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/logo"
+            android:weightSum="1">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="10dp"
+        android:text="When you avoid making garbage in the first place, you don&apos;t have to worry about disposing of waste or recycling it later. Changing your habits is the key, think about ways you can reduce your waste when you shop, work and play. There&apos;s a ton of ways for you to reduce waste, save yourself some time and money, and be good to the Earth at the same time. We have to reduce the different types of waste and in different places like At school, At home, At the office etc."
+        android:textSize="19.5sp"
+        android:id="@+id/logo1"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignLeft="@+id/scrollView"
+        android:layout_alignStart="@+id/scrollView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More about reduce"
+        android:id="@+id/morereduse"
+        android:textAlignment="center"
+        android:layout_below="@+id/logo1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp" />
+
+</RelativeLayout>

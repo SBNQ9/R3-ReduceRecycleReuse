@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.boss.sortg.battery"
+    android:background="#ffffffff"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BATTERIES"
+        android:id="@+id/t1"
+        android:textColor="#ffc6ff3a"
+        android:textColorHighlight="@color/background_material_dark"
+        android:textSize="@dimen/abc_action_bar_progress_bar_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/t1"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/sorteerhulp_ic_batterijen"
+        android:nestedScrollingEnabled="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What type of battery is it?"
+        android:id="@+id/textView3"
+        android:textSize="27dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Household battery"
+        android:id="@+id/housebat"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:background="#ffe5ff94"
+        android:padding="10dp"
+        android:paddingTop="10dp"
+        android:nestedScrollingEnabled="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Battery pack"
+        android:id="@+id/batpack"
+        android:layout_below="@+id/housebat"
+        android:layout_centerHorizontal="true"
+        android:background="#ffe5ff94"
+        android:padding="10dp"
+        android:paddingTop="10dp"
+        android:nestedScrollingEnabled="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Battery included in appliance"
+        android:id="@+id/batapp"
+        android:layout_below="@+id/batpack"
+        android:layout_centerHorizontal="true"
+        android:background="#ffe5ff94"
+        android:padding="10dp"
+        android:paddingTop="10dp"
+        android:nestedScrollingEnabled="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Lead-acid battery"
+        android:id="@+id/labatl"
+        android:layout_below="@+id/batapp"
+        android:layout_centerHorizontal="true"
+        android:background="#ffe5ff94"
+        android:padding="10dp"
+        android:paddingTop="10dp"
+        android:nestedScrollingEnabled="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="All Other Industrical batteries "
+        android:id="@+id/indusbat"
+        android:background="#ffe5ff94"
+        android:padding="10dp"
+        android:paddingTop="10dp"
+        android:nestedScrollingEnabled="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/labatl" />
+
+</RelativeLayout>

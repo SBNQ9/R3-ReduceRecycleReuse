@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.boss.r3.AfterSignIn"
+    >
+
+    <TextView android:text="WELCOME," android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView61" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/upload"
+        android:layout_below="@+id/textView61"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/upload"/>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/shop"
+        android:layout_above="@+id/textView63"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/shop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      UPLOAD ITEM"
+        android:id="@+id/textView62"
+        android:layout_toEndOf="@+id/textView61"
+        android:layout_alignStart="@+id/upload"
+        android:layout_below="@+id/upload" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOP"
+        android:id="@+id/textView63"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
+
+</RelativeLayout>

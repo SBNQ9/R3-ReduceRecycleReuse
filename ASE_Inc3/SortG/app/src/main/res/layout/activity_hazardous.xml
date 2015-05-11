@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.boss.sortg.hazardous"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/sorteerhulp_ic_kga_highlighted" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HAZARDOUS"
+        android:id="@+id/textView25"
+        android:layout_alignBottom="@+id/imageView10"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffff3809"
+        android:textSize="35dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="YES: flourescent tubes and enegy-saving light bulbs, spray cans, batteries, peroleum pproducts, fat, paint, chemicals, injection needles in a solid and closed container."
+        android:id="@+id/textView26"
+        android:layout_below="@+id/imageView10"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff000000"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NO: gas bottles, explosives, radioactive substances."
+        android:id="@+id/textView27"
+        android:layout_below="@+id/textView26"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff000000"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ATTENTION: do not mix dangerous materials. Leave them in their original packaging whenever possible."
+        android:id="@+id/textView28"
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff000000"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TIPS: return out-of-date medicines to your pharmacist. Used batteries can be deposited at BEBAT collection points. "
+        android:id="@+id/textView29"
+        android:layout_below="@+id/textView28"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff000000"
+        android:paddingTop="10dp" />
+</RelativeLayout>

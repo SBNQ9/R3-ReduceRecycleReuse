@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:id="@+id/rel">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="     BATTERY PACKS"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:textStyle="bold|italic"
+        android:textSize="35dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_marginTop="39dp"
+        android:src="@drawable/batpack"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Return battery packs- including rechargeable ones- from electrical or electronic devices such as cameras,DIY-tools, cellpones, and laptops at any collection point. All terminals and contacts for lithium ion or lithium-polymer batteries should be masked before you deposit them at your collection point."
+        android:id="@+id/textView7"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.boss.sortg.household"
+    android:background="#ffffffff"
+    android:longClickable="false">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView11"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/sorteerhulp_ic_rest_highlighted" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="HOUSE HOLD"
+        android:id="@+id/textView30"
+        android:layout_alignBottom="@+id/imageView11"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff77848b"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="YES: everything that is not selectively collected for recycling or recovery."
+        android:id="@+id/textView31"
+        android:layout_below="@+id/imageView11"
+        android:layout_alignParentStart="true"
+        android:paddingTop="15dp"
+        android:longClickable="false"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NO: medicines, dangerous or toxic materials, sharp objects, dead animals."
+        android:id="@+id/textView32"
+        android:layout_below="@+id/textView31"
+        android:layout_alignParentStart="true"
+        android:paddingTop="15dp"
+        android:longClickable="false"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TIP: always ensure that waste cannot be sorted and deposited with selectively collected materials."
+        android:id="@+id/textView33"
+        android:layout_below="@+id/textView32"
+        android:layout_alignParentStart="true"
+        android:paddingTop="15dp"
+        android:longClickable="false"
+        android:textColor="#ff000000" />
+</RelativeLayout>
